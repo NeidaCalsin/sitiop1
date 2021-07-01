@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/estilosEval1.css">
+</head>
+<body>
+	<h1> Aplicación 1 - Validación con atributos HTML5</h1>
+	<div id="content">
+		<form action="p00_validada.php" method="post">
+		<table>
+			<tr>
+				<th colspan="2" class="titulo">Aplicación 1 - Validar con atributos HTML5</th>
+			</tr>
+			<tr>
+				<td id="tdIzq">Nombres completos (1 punto):</td>
+				<td id="tdDer"><input type="text" name="txtNom" id="txtNom" value="" required></td>
+			</tr>
+			<tr>
+				<td id="tdIzq">Edad actual (1 punto):</td>
+				<td id="tdDer"><input type="text" name="Edad" id="Edad" value="" required ></td>
+			</tr>
+			<tr>
+				<td id="tdIzq">Escribir tres números (3 puntos):</td>
+				<td id="tdDer"><input pattern="[0-9]{3}" type="tel" name="txtNum" value="" required></td>
+			</tr>
+			<th colspan="2" class="subTitulo">
+				<input class="boton" type="submit" name="btnVer" value="Pasar">
+			</th>
+		</table>
+		</form>
+	</div>
+</body>
+</html>

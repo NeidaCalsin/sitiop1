@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<script src="js/form04valida.js"></script>
+	</head>
+	<body>
+		<h1>Validación de elegir dos opciones</h1>
+
+		<form action="p00_validada.php" method="post" onsubmit="return fnValidar04();">
+			<h3> Seleccione una preferencia </h3>
+			<p> <input type="checkbox" name="checpref[]" id="checpref[]" value="M"> Música </p>
+			<p> <input type="checkbox" name="checpref[]" id="checpref[]" value="P"> Película </p>
+			<p> <input type="checkbox" name="checpref[]" id="checpref[]" value="D"> Deporte </p>
+			<p> <input type="checkbox" name="checpref[]" id="checpref[]" value="T"> Teatro </p>
+			<p> <input type="checkbox" name="checpref[]" id="checpref[]" value="N"> No responde </p>		
+
+			<p> <input type="submit" name="btnVer" value="Pasar"></p>
+		</form>
+	</body>
+</html>

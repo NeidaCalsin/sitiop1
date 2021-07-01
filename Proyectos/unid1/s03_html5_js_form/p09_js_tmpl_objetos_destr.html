@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const persona={
+            nombre: 'Juan',
+            edad: 20,
+            estado: true,
+            caracteristicas: ["moreno", "165cm",60]
+        }
+        persona.dni=71897838
+
+        console.log(persona);
+        let xNombre=persona.nombre;
+        console.log(xNombre);
+
+        let xEdad=persona.edad;
+        console.log(xEdad);
+
+        let xEstatura=persona.caracteristicas [1];
+        console.log(xEstatura);
+
+        const {nombre, edad, dni}=persona;
+        console.log(nombre);
+        console.log(edad);
+        console.log(dni);
+
+        alert("El nombre es:"+nombre);
+        alert("La edad es:"+edad)
+        alert(`El NOMBRE es: ${nombre} y EDAD es ${edad}`);
+
+    </script>
+</body>
+</html>

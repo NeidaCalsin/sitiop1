@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documento sin titulo</title>
+    <style>
+        td{background-color: rgb(80, 255, 95);}
+        #xBorde{border: 3px dashed rgb(235, 117, 225)} 
+        #borde1{border: 5px dashed rgb(80, 6, 47)} 
+        .bor{font-size: 20px; color: rgb(196, 71, 245);}
+        .xForma{font-size: 32px; color: rgb(207, 102, 102);}  
+    </style>
+</head>
+<body>
+    <h1>Tabla 5 x 4</h1>
+    <table border="2">
+
+        <tr>
+            <td colspan="4">Fila1_Colum1</td>           
+        </tr>
+        <tr>
+            <td >Fila2_Colum1</td>
+            <td rowspan="2">Fila2_Colum2</td>
+            <td id="xBorde">Fila2_Colum3</td>
+            <td>Fila2_Colum4</td>
+        </tr>
+        <tr >
+            <td >Fila3_Colum1</td>
+            
+            <td >Fila3_Colum3</td>
+            <td class="xForma">Fila3_Colum4</td>
+        </tr>
+        <tr >
+            <td id="borde1">Fila4_Colum1</td>
+            <td id="borde1">Fila4_Colum2</td>
+            <td id="borde1">Fila4_Colum3</td>
+            <td id="borde1">Fila4_Colum4</td>
+        </tr>
+        <tr>
+            <td class="bor">Fila5_Colum1</td>
+            <td class="bor">Fila5_Colum2</td>
+            <td >Fila5_Colum3</td>
+            <td >Fila5_Colum4</td>
+
+        </tr>
+    </table>
+    
+</body>
+</html>
